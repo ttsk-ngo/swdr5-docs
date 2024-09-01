@@ -40,7 +40,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ttsk-ngo/swdr5-docs/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -59,7 +59,7 @@ const config: Config = {
     },
     announcementBar: {
       id: 'announcement-bar',
-      content: 'Jeżeli chcesz rozwijać nowe narzędzie SWDR5 <a target="_blank" rel="noopener noreferrer" href="https://td2.info.pl/rj/zgloszenie-do-projektu-swdr5/">zapoznaj się z tym wątkiem.</a>',
+      content: 'If you want to develop the new SWDR5 tool <a target="_blank" rel="noopener noreferrer" href="https://td2.info.pl/rj/application-for-the-swdr5-project/">please read this thread.</a>',
       backgroundColor: '#fafbfc',
       textColor: '#091E42',
       isCloseable: true,
@@ -112,7 +112,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/ttsk-ngo/swdr5-docs',
           label: 'GitHub',
           position: 'right',
         },
