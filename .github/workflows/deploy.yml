@@ -41,7 +41,8 @@ jobs:
           git rm -rf .
           git clean -fdx
           git commit --allow-empty -m "Clean gh-pages branch"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/ttsk-ngo/swdr5-docs.git gh-pages
+          git push origin gh-pages
+      
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
