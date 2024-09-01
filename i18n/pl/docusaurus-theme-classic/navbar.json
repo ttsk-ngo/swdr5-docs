@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "TTSK",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "TTSK Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Requirements": {
+    "message": "Wymagania",
+    "description": "Navbar item with label Requirements"
+  },
+  "item.label.Design": {
+    "message": "Projekt",
+    "description": "Navbar item with label Design"
+  },
+  "item.label.Implementation": {
+    "message": "Implementacja",
+    "description": "Navbar item with label Implementation"
+  },
+  "item.label.User": {
+    "message": "Instrukcja Użytkownika",
+    "description": "Navbar item with label User"
+  },
+  "item.label.Testing": {
+    "message": "Testy",
+    "description": "Navbar item with label Testing"
+  },
+  "item.label.Project Management": {
+    "message": "Zarządzanie",
+    "description": "Navbar item with label Project Management"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
