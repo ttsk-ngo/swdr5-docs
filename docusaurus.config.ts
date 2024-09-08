@@ -1,49 +1,49 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: 'SWDR 5',
-  tagline: 'Make SWDR Great Again',
-  favicon: 'img/favicon.ico',
+  title: "SWDR 5",
+  tagline: "Make SWDR Great Again",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://swdr5.docs.ttsk.ngo',
+  url: "https://swdr5.docs.ttsk.ngo",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/swdr5-docs/',
+  baseUrl: "/swdr5-docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'TTSK',
-  projectName: 'swdr5-docs', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  organizationName: "TTSK",
+  projectName: "swdr5-docs", // Usually your repo name.
+  deploymentBranch: "gh-pages",
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'pl'],
+    defaultLocale: "en",
+    locales: ["en", "pl"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
+          include: ["**/*.md", "**/*.mdx"],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/ttsk-ngo/swdr5-docs/tree/main/',
+          editUrl: "https://github.com/ttsk-ngo/swdr5-docs/tree/main/",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -51,108 +51,109 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: "dark",
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
     announcementBar: {
-      id: 'announcement-bar',
-      content: 'If you want to develop the new SWDR5 tool <a target="_blank" rel="noopener noreferrer" href="https://td2.info.pl/rj/application-for-the-swdr5-project/">please read this thread.</a>',
-      backgroundColor: '#fafbfc',
-      textColor: '#091E42',
+      id: "announcement-bar",
+      content:
+        'If you want to develop the new SWDR5 tool <a target="_blank" rel="noopener noreferrer" href="https://td2.info.pl/rj/application-for-the-swdr5-project/">please read this thread.</a>',
+      backgroundColor: "#fafbfc",
+      textColor: "#091E42",
       isCloseable: true,
     },
     navbar: {
-      title: 'TTSK',
+      title: "TTSK",
       logo: {
-        alt: 'TTSK Logo',
-        src: '/img/logo_ttsk.png',
+        alt: "TTSK Logo",
+        src: "/img/logo_ttsk.png",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'requirementsSidebar',
-          position: 'left',
-          label: 'Requirements',
+          type: "docSidebar",
+          sidebarId: "requirementsSidebar",
+          position: "left",
+          label: "Requirements",
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'designSidebar',
-          position: 'left',
-          label: 'Design',
+          type: "docSidebar",
+          sidebarId: "designSidebar",
+          position: "left",
+          label: "Design",
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'implementationSidebar',
-          position: 'left',
-          label: 'Implementation',
+          type: "docSidebar",
+          sidebarId: "implementationSidebar",
+          position: "left",
+          label: "Implementation",
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'userSidebar',
-          position: 'left',
-          label: 'User',
+          type: "docSidebar",
+          sidebarId: "userSidebar",
+          position: "left",
+          label: "User",
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'testingSidebar',
-          position: 'left',
-          label: 'Testing',
+          type: "docSidebar",
+          sidebarId: "testingSidebar",
+          position: "left",
+          label: "Testing",
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'projectManagementSidebar',
-          position: 'left',
-          label: 'Project Management',
+          type: "docSidebar",
+          sidebarId: "projectManagementSidebar",
+          position: "left",
+          label: "Project Management",
         },
         {
-          type: 'localeDropdown',
-          position: 'right',
+          type: "localeDropdown",
+          position: "right",
         },
         {
-          href: 'https://github.com/ttsk-ngo/swdr5-docs',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/ttsk-ngo/swdr5-docs",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'testowy link',
-              to: '/docs/Design',
+              label: "testowy link",
+              to: "/docs/Design",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Forum',
-              href: 'https://td2.info.pl/',
+              label: "Forum",
+              href: "https://td2.info.pl/",
             },
             {
-              label: 'Mattermost',
-              href: 'https://chat.ttsk.ngo/',
+              label: "Mattermost",
+              href: "https://chat.ttsk.ngo/",
             },
             {
-              label: 'Facebook',
-              href: 'https://www.facebook.com/TrainDriver2',
+              label: "Facebook",
+              href: "https://www.facebook.com/TrainDriver2",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/ttsk-ngo',
+              label: "GitHub",
+              href: "https://github.com/ttsk-ngo",
             },
           ],
         },
@@ -164,6 +165,11 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
 };
 
 export default config;
