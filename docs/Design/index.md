@@ -1,3 +1,7 @@
-# Design
+---
+hide_title: true
+---
 
-This is the index page.
+<div className="center-text">
+    Software Requirements Specification
+</div>
