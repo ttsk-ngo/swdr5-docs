@@ -20,13 +20,16 @@
     "@docusaurus/theme-mermaid": "^3.5.2",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "flowbite": "^2.5.1",
+    "flowbite-react": "^0.10.1",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^5.3.0",
     "remark": "^15.0.1",
     "remark-gfm": "^4.0.0",
-    "remark-html": "^16.0.1"
+    "remark-html": "^16.0.1",
+    "tailwindcss": "^3.4.11"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.5.2",
