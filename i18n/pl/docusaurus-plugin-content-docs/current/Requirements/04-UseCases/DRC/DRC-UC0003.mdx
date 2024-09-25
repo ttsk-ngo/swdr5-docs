@@ -1,0 +1,23 @@
+---
+sidebar_label: DRC-UC0003
+---
+
+import { FaRegCheckSquare, FaRegSquare } from "react-icons/fa";
+import { FaRegSquareMinus } from "react-icons/fa6";
+import Button from "@site/src/components/MDX/Button";
+
+# DRC-UC0003 - Zmiana zakresu dat kalendarza
+
+|    Wykonane     |                                                           powiązane FR | blokuje | jest blokowane przez     |
+| :-------------: | ---------------------------------------------------------------------: | :------ | :----------------------- |
+| <FaRegSquare /> | [DRC-FR0001](/docs/Requirements/FunctionalRequirements/DRC/DRC-FR0001) |         | [DRC-UC0002](DRC-UC0002) |
+
+Obszar pokrycia dat bezpośrednio zalezy od aktualnie wybranego [widoku](./DRC-UC0002). Możliwe widoki:
+
+- dobowy
+- tygodniowy
+- miesięczny
+
+## Zmiana bieżącego dnia, tygodnia lub miesiąca
+
+Użytkownik korzystając z przycisków <Button color="primary" width="32px">&lt;</Button>, <Button color="primary" width="32px">&gt;</Button> umieszczonych pomiędzy przyciskami <Button color="primary" width="32px">D</Button>, <Button color="primary" width="32px">W</Button>, <Button color="primary" width="32px">M</Button> zmienia bieżący dzień, tydzień lub miesiąc ze skokiem "+/- 1"

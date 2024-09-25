@@ -1,0 +1,27 @@
+---
+sidebar_label: DR-FR0002
+---
+
+import { FaRegCheckSquare, FaRegSquare } from "react-icons/fa";
+import { FaRegSquareMinus } from "react-icons/fa6";
+
+# DR-FR0002 - Prawo do objęcia posterunku na scenerii
+
+|    Wykonane     | Powiązane UC | Blokuje | Jest blokowane przez |
+| :-------------: | :----------- | :------ | -------------------- |
+| <FaRegSquare /> |              |         |                      |
+
+Użytkownik nie może objąć dyzuru na posterunku, jeżeli nie ma do tego prawa. Aby takie prawo otrzymać musi być spełniony jeden z warunków:
+
+:::warning
+Nalezy opisać FR i/lub UC dla pkt 2.1
+:::
+
+1. Obejmowanie całej scenerii (niezależnie od ilości posterunków)
+   1. Sceneria jest nieobsadzona i niezarezerwowana
+   2. Sceneria jest nieobsadzona i zarezerwowana przez użytkownika
+   3. Sceneria jest obsadzona i obecny DR oznaczył użytkownika jako przejmującego (podmiana)
+2. Obejmowanie posterunku, lub posterunków na zajętej scenerii
+   1. Obecny DR oznaczył użytkownika jako przejmującego dany posterunek lub posterunki
+
+Potwierdzeniem nabycia prawa do objęcia posterunku jest dokonany wpis w [kalendarzu dyżurów](./DR-FR0003.mdx).

@@ -1,0 +1,24 @@
+---
+sidebar_label: DRC-UC0001
+---
+
+import { FaRegCheckSquare, FaRegSquare } from "react-icons/fa";
+import { FaRegSquareMinus } from "react-icons/fa6";
+
+# DRC-UC0001 - Widok ogólny kalendarza dyżurów
+
+|    Wykonane     |                                                          powiązane FR | Blokuje                                            | Jest blokowane przez |
+| :-------------: | --------------------------------------------------------------------: | :------------------------------------------------- | :------------------- |
+| <FaRegSquare /> | [DR-FR0003](/docs/Requirements/FunctionalRequirements/DRC/DRC-FR0001) | [DRC-UC0002](DRC-UC0002), [DRC-UC0003](DRC-UC0003) |                      |
+
+Użytkownik po otworzeniu modułu kalendarza widzi wszystkie swoje dyżury. Obszar pokrycia dat i sposób wizualizacji bezpośrednio zalezy od aktualnie wybranego widoku. Możliwe widoki:
+
+- dobowy
+- tygodniowy
+- miesięczny
+
+To, jak szczegółowo użytkownik widzi swoje dyzury zalezy od widoku. 
+
+## Widok dobowy
+
+W tym widoku kalendarz pokazuje całą dobę z podziałem godzinowym. Każdy posterunek na którym dyzuruje użytkownik zaznaczony jest pionowym paskiem, którego szerokość zmienia sie dynamicznie w zależności od ilości posterunków na których pełni on jednoczesnie dyżur. Kolor paska powiązany jest bezpośrednio z rolą jaką użytkownik pełni na scenerii. 

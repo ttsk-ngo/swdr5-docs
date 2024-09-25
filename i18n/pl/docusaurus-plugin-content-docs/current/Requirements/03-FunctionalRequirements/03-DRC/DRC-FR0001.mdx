@@ -1,0 +1,53 @@
+---
+sidebar_label: DRC-FR0001
+---
+
+import { FaRegCheckSquare, FaRegSquare } from "react-icons/fa";
+import { FaRegSquareMinus } from "react-icons/fa6";
+import Button from "@site/src/components/MDX/Button";
+
+# DRC-FR0001 - Kalendarz dyżurów
+
+:::warning
+Nie wszystkie UC zostały opisane.
+:::
+
+|    Wykonane     |                                             Powiązane UC | Blokuje | Jest blokowane przez |
+| :-------------: | -------------------------------------------------------: | :------ | :------------------- |
+| <FaRegSquare /> | [DRC-UC0001](/docs/Requirements/UseCases/DRC/DRC-UC0001) |         |                      |
+| <FaRegSquare /> | [DRC-UC0002](/docs/Requirements/UseCases/DRC/DRC-UC0002) |         |                      |
+| <FaRegSquare /> | [DRC-UC0003](/docs/Requirements/UseCases/DRC/DRC-UC0003) |         |                      |
+
+Kalendarz dyżurów jest narzędziem organizującym pracę Dyżurnych Ruchu na poszczególnych sceneriach. Objęcie dyżuru może nastąpić tylko, gdy w kalendarzu widnieje stosowny wpis. Odblokowuje on warunek pozwalający na pojawienie się scenerii [liście scenerii objętych przez dyżurnego ruchu](/docs/Requirements/FunctionalRequirements/DR/DR-FR0003).
+
+## Podstawowe funkcje kalendarza
+
+### Informacyjna
+
+Każdy użytkownik symulatora widzi dokładnie plan dyżurów i w prosty sposób może zaplanować swój dyżur tak, aby efektywnie wykorzystać dostepne okna czasowe, możliwość zestawienia stałych blokad, zaproponowane podmiany, itp.
+
+### Organizacji pracy na scenerii
+
+Każda sceneria może być obsadzona przez więcej niż jednego dyżurnego. W ramach kalendarza osoby pełniące dyżur mogą:
+
+- ustalić zakres obowiązków każdej z osób
+- ogłaszać podmiany
+- ogłaszać zapotrzebowanie na dodatkowe osoby
+- przy spełnionych kryteriach obsadzenia posterunku, może być on od razu brany pod uwagę podczas generowania RJ dla przyszłych slotów czasowych, lub automatycznie odrzucany z powodu braku wystarczającej obsady.
+
+:::info
+Przykładowo na scenerii Odolany, do płynnej obsługi ruchu, niezbędna jest obsada co najmniej trzech dyzurnych. W kalendarzu na godzinę 20-tą została wpisana rezerwacja posterunku WOA wraz z otwartym zapotrzebowaniem na posterunkach WOB i WOC. O godzinie 19-tej na dyżur zgłosiły się osoby z odpowiednimi uprawnieniami, więc sceneria jest już brana pod uwagę przy wystawianiu RJ, które obejmują tę stację po godzinie 20-tej.
+:::
+
+## Role odzwierciedlone w kalendarzu
+
+Użytkownik może pełnić różne role na różnych sceneriach i posterunkach. Aby łatwiej mozna było zorientowac się, kto czym sie zajmuje, każda rola ma przypisany kolor. Kolor ten używany jest między innymi w kalendarzu.
+
+|           Rola           |                         Kolor                          |
+| :----------------------: | :----------------------------------------------------: |
+|        Dyspozytor        |  <Button color="danger" width="64px">&nbsp;</Button>   |
+|      Dyżurny Ruchu       |  <Button color="primary" width="64px">&nbsp;</Button>  |
+| Dyżurny Ruchu Pomocniczy |  <Button color="success" width="64px">&nbsp;</Button>  |
+| Dyżurny Ruchu Manewrowy  |   <Button color="info" width="64px">&nbsp;</Button>    |
+|       Nastawniczy        |  <Button color="success" width="64px">&nbsp;</Button>  |
+|        Zwrotniczy        | <Button color="secondary" width="64px">&nbsp;</Button> |

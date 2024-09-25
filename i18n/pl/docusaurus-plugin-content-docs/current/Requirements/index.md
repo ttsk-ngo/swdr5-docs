@@ -1,3 +1,3 @@
-# Wymagania
+# Projekt
 
 Strona główna

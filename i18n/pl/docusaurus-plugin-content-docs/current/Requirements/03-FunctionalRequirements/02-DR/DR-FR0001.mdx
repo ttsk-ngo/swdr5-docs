@@ -1,0 +1,25 @@
+---
+sidebar_label: DR-FR0001
+---
+
+import { FaRegCheckSquare, FaRegSquare } from "react-icons/fa";
+import { FaRegSquareMinus } from "react-icons/fa6";
+
+# DR-FR0001 - Obejmowanie posterunku przez użytkownika.
+
+:::warning
+Należy opisać brakujące funkcjonalności wynikające z tego FR.
+:::
+
+|    Wykonane     | Powiązane UC | Blokuje                      | Jest blokowane przez |
+| :-------------: | :----------- | :--------------------------- | -------------------- |
+| <FaRegSquare /> |              | [DR-FR0002](./DR-FR0002.mdx) |                      |
+
+Do objęcia posterunku niezbędne jest spełnienie następujących warunków:
+
+1. Niezbędny poziom DR do objęcia scenerii lub autoryzacja na posterunek | scenerię
+2. Globalny wskaźnik jakości dyżuru >= 0
+3. Lokalny wskaźnik jakości dyżuru >= 0
+4. Dostępne kredyty
+5. [Prawo do objęcia posterunku](./DR-FR0002.mdx) na scenerii
+6. Użytkownik musi być zalogowany na scenerii której dyżur chce objąć ??? a moze nie musi?

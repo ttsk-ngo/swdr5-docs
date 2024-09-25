@@ -1,0 +1,30 @@
+---
+sidebar_label: DRC-UC0002
+---
+
+import { FaRegCheckSquare, FaRegSquare } from "react-icons/fa";
+import { FaRegSquareMinus } from "react-icons/fa6";
+import Button from "@site/src/components/MDX/Button";
+
+# DRC-UC0002 - Zmiana widoku kalendarza
+
+|    Wykonane     |                                                          powiązane FR | blokuje                  | jest blokowane przez |
+| :-------------: | --------------------------------------------------------------------: | :----------------------- | :------------------- |
+| <FaRegSquare /> | [DR-FR0003](/docs/Requirements/FunctionalRequirements/DRC/DRC-FR0001) | [DRC-UC0003](DRC-UC0003) |                      |
+
+Obszar pokrycia dat i sposób wizualizacji bezpośrednio zalezy od aktualnie wybranego widoku. Możliwe widoki:
+
+- dobowy
+- tygodniowy
+- miesięczny
+
+## Zmiana widoku
+
+Aby zmienić zakres wyświetlania użytkownik wybiera przycisk wyświetlany w górnej części kalendarza:
+
+<!-- prettier-ignore -->
+- <Button color="primary" width="32px">D</Button> - dla widoku dobowego
+- <Button color="primary" width="32px">W</Button> - dla widoku tygodniowego
+- <Button color="primary" width="32px">M</Button> - dla widoku miesięcznego
+
+Uzytkownik może użyć skrótów klawiszowych 'D', 'W', 'M' - powiązanych z odpowiadającymi im przyciskami.
