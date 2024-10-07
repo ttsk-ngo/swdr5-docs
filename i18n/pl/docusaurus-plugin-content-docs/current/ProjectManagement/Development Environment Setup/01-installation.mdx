@@ -1,0 +1,89 @@
+# Instalacja
+
+Poniższa instrukcja jest sugestią, jak należy zainstalować i skonfigurować środowisko, aby móc tworzyć dokumentację korzystając z pełnego frameworka Docusaurus. Jeżeli preferujesz inne narzędzia, nic nie stoi na przeszkodzie, abyś z nich korzystał. Instrukcja omawia tylko środowisko Microsoft Windows.
+
+## Repozytorium
+
+## Power Shell
+
+Wszystkie poniższe operacje zakładają zainstalowanie aplikacji, które będą dostępne dla wszystkich użytkowników. Do tego celu wymagane są uprawnienia administroatora. Jeżeli wolisz zainstalować poniższe aplikacje tylko dla bieżącego użytkownika, pomiń opcję `--scope machine` we wszystkich dlaszych poleceniach.
+
+Uruchom PowerShell z uprawnieniami Administatora
+
+![logo](/img/ProjectManagement/DevelopementEnvironmentSetup/RunPowershellasAdmin.png)
+
+### Git
+
+```PowerShell
+winget install --id Git.Git -e --source winget --scope machine
+```
+
+```
+Found Git [Git.Git] Version 2.46.2
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://github.com/git-for-windows/git/releases/download/v2.46.2.windows.1/Git-2.46.2-64-bit.exe
+  ██████████████████████████████  65.2 MB / 65.2 MB
+Successfully verified installer hash
+Starting package install...
+Successfully installed
+```
+
+### Github Desktop
+
+Jest to nakładka na `git`, która integruje się również z usługą github
+
+```PowerShell
+winget install github-desktop --scope machine
+```
+
+```
+Found GitHub Desktop [GitHub.GitHubDesktop] Version 3.4.6
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://desktop.githubusercontent.com/releases/3.4.6-e598d339/GitHubDesktopSetup-x64.msi
+  ██████████████████████████████   159 MB /  159 MB
+Successfully verified installer hash
+Starting package install...
+Successfully installed
+```
+
+###nodeJS
+
+NodeJS to framework w którym wykonuje się kod Docusaurus. O ile nie poprawiasz prostych błędów w istniejących stronach dokumentacji to środowisko jest niezbędne podczas jej tworzenia. Pozwala lokalnie wyświetlać strony i sprawdza błędy logiczne.
+
+
+```PowerShell
+winget install -e --id OpenJS.NodeJS --scope machine
+```
+
+```
+Found Node.js [OpenJS.NodeJS] Version 22.9.0
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://nodejs.org/dist/v22.9.0/node-v22.9.0-x64.msi
+  ██████████████████████████████  28.2 MB / 28.2 MB
+Successfully verified installer hash
+Starting package install...
+Successfully installed
+```
+
+### Microsoft Studio Code
+
+Jest to edytor posiadający pełne wsparcie do tworzenia aplikacji w środowiku NodeJS. Pozwala na łatwą obsługę całego projektu.
+
+
+```PowerShell
+winget install -e --id Microsoft.VisualStudioCode  --scope machine
+```
+
+```
+Found Microsoft Visual Studio Code [Microsoft.VisualStudioCode] Version 1.94.0
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://vscode.download.prss.microsoft.com/dbazure/download/stable/d78a74bcdfad14d5d3b1b782f87255d802b57511/VSCodeSetup-x64-1.94.0.exe
+  ██████████████████████████████  95.8 MB / 95.8 MB
+Successfully verified installer hash
+Starting package install...
+Successfully installed
+```
