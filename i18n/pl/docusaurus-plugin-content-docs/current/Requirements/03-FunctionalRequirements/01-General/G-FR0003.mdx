@@ -1,0 +1,47 @@
+---
+sidebar_label: G-FR0003
+---
+
+import { FaRegCheckSquare, FaRegSquare } from "react-icons/fa";
+import { FaRegSquareMinus } from "react-icons/fa6";
+
+# G-FR0003 - Profil użytkownika - reputacja
+
+| Wykonane | Powiązane UC | Blokuje | Jest blokowane przez |
+| :------: | :----------- | :------ | -------------------- |
+|          |              |         |                      |
+
+Reputacja jest zbiorem statystyk pokazujących obraz zachowań uzytkownika w wielu kontekstach. Na postawie tych statystyk można (lub nie) podjąć działania związane z symulatorem.
+
+## Globalny wskaźnik reputacji
+
+Wskaźnik na podstawie którego użytkownik uzyskuje dostęp do poszczególnych funkcjonalności systemu. Na jego wynik wpływ mają następujące działania:
+
+- rozstrzygnięte spory zgłoszone w systemie skarg
+- ocena zachowania określona przez innych użytkowników rozgrywki
+- automatyczna ocena wypowiedzi dokonana przez zaimplementowane w grze systemy
+- akcje wykonane przez użytkownika
+- czas
+
+## Wskaźnik jakości pracy dyżurnego
+
+Wskaźnik powiązany bezpośrednio ze scenerią. Jest on niezalezny od wskaźnika globalnego i brany jest pod uwagę niezależnie od niego. Na jego wynika wpływ maja następujące działania:
+
+- ilość dyżurów na scenerii w danej roli
+- akcje wykonane przez użytkownika
+- czas
+
+## Wskaźnik jakości pracy maszynisty
+
+:::warning
+Wymienić i opisać w oddzielnych UC wszystkie możliwe sytuacje, które dają się zmierzyć, lub potwierdzić przez innych uczestników rozgrywki
+:::
+Wskaźnik powiązany bezpośrednio ze scenerią. Jest on niezalezny od wskaźnika globalnego i brany jest pod uwagę niezależnie od niego. Na jego wynika wpływ maja następujące działania:
+
+- wykolejenia
+- prędkość pomijania semaforów i tarcz
+- przejechanie W4, gdy wymagane było zatrzymanie w peronie
+- przekraczanie prędkości szlakowej
+- zatrzymanie składu poza peronem, gdy czoło składu nie jest w pobliżu W4
+- użycie radio-stop bez uzasadnienia
+- najechanie na inny skład w wyniku pominięcia semafora lub tarczy
