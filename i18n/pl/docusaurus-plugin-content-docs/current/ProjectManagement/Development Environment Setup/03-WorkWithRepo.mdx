@@ -1,0 +1,38 @@
+# Praca z Repozytorium
+
+## Kompilacja i uruchomienie lokalnie Docusaurusa
+
+1. Po pobraniu repozytorium GitHub Desktop powinien pokazywać podobny widok:
+![GitHub06](/img/ProjectManagement/DevelopmentEnvironmentSetup/06-GithubCloneRepo03.png)
+- Current repository - wybrane repozytorium
+- Current branch - aktualnie aktywna gałąź repozytorium
+- Fetch origin - informacja, jak dawno repozytorium zostało zsynchronizowane z nadrzędną instancją.
+- Changes - w tym widoku będą pokazane wszystkie pliki, w których nastąpiła zmiana treści
+2. Korzystając z przycisku `Open Visual Studio Code` otwórz edytor
+- Na pytanie "Do you trust the authors of the files in this folder?" odpowiedz "Yes"
+3. Uruchom terminal `Ctrl+\` `
+4. Skonfiguruj środowisko nodeJS
+```PowerShell
+fnm env --use-on-cd | Out-String | Invoke-Expression
+```
+5. Zainstaluj niezbędne pakiety wymagane przez projekt
+```PowerShell
+npm install
+```
+6. Zbuduj projekt - może to zająć kilka minut
+```npm
+npm run build
+```
+7. Uruchom projekt, korzystając z lokalnego serwera
+```npm
+npm run serve
+```
+Wykonanie tego polecenia uruchamia lokalny serwer www, a sam projekt dostępny jest pod adresem: http://localhost:3000/swdr5-docs/
+
+## Kompilacja w locie
+
+`npm run build` tworzy kompilacje całego projektu. Podczas wprowadzania zmian, wygodnym trybem jest uruchomienie kompilacji automatycznej, wykonywanej automatycznie po zapisaniu wprowadzonych zmian. Tryb ten działa tylko dla jednego języka.
+```npm
+npm run start -- --locale pl
+```
+
